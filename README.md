@@ -71,7 +71,7 @@ https://github.com/user-attachments/assets/1aa99bf8-2818-4392-847c-80265e17ca27
 1. Clone este repositório:
 
 ```bash
-git clone https://github.com/SEU_USUARIO/copa-stc-2024.git
+git clone https://github.com/joaopaulo-io/copa-stc-2024.git
 ```
 
 2. Abra o arquivo **index.html** no navegador.
