@@ -5,6 +5,14 @@ A ideia surgiu durante o trabalho na **Secretaria de Esportes**, e o projeto per
 
 ---
 
+# 🔗 Acesse o site online
+
+Você pode visualizar o projeto funcionando diretamente pelo **GitHub Pages**:
+
+👉 **[Acesse o site agora!](https://github.com/joaopaulo-io/copa-stc-2024/)**
+
+---
+
 ## 🧩 Tecnologias utilizadas
 
 * **HTML5** para estrutura da página
@@ -27,11 +35,15 @@ A ideia surgiu durante o trabalho na **Secretaria de Esportes**, e o projeto per
 ├── js/
 │   └── index.js
 ├── json-files/
-│   ├── grupoA.json
-│   ├── grupoB.json
-│   ├── grupoC.json
-│   ├── grupoD.json
-│   └── primeiraFase.json
+│   ├── groupA.json
+│   ├── groupB.json
+│   ├── groupC.json
+│   ├── groupD.json
+|   ├── highlights.json
+|   ├── quarterFinals.json
+|   ├── semiFinals
+|   ├── final
+│   └── firstPhase.json
 ├── index.html
 └── readme.md
 ```
@@ -50,11 +62,7 @@ A ideia surgiu durante o trabalho na **Secretaria de Esportes**, e o projeto per
 
 ## 🎥 Preview
 
-Você pode substituir o ID do vídeo para exibir a prévia:
-
-[![Veja o vídeo do projeto](https://img.youtube.com/vi/SEU_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=SEU_VIDEO_ID)
-
-> Lembre-se de trocar **SEU_VIDEO_ID** pelo ID real do vídeo do YouTube.
+https://github.com/user-attachments/assets/1aa99bf8-2818-4392-847c-80265e17ca27
 
 ---
 
