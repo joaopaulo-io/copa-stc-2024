@@ -9,7 +9,7 @@ A ideia surgiu durante o trabalho na **Secretaria de Esportes**, e o projeto per
 
 Você pode visualizar o projeto funcionando diretamente pelo **GitHub Pages**:
 
-👉 **[Acesse o site agora!](https://github.com/joaopaulo-io/copa-stc-2024/)**
+👉 **[Acesse o site agora!](https://joaopaulo-io.github.io/copa-stc-2024/)**
 
 ---
 
