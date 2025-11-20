@@ -1,0 +1,43 @@
+[
+  {
+    "titulo": "Copa Santa Cruz 2024",
+    "estadio": "Estádio Municipal",
+    "data": "20/07",
+    "hora": "14:30",
+
+    "escudo_mandante": "liverpool.png",
+    "mandante": "LIVERPOOL",
+    "gols_mandante": 1,
+
+    "escudo_visitante": "realdantas.png",
+    "visitante": "REAL DANTAS",
+    "gols_visitante": 3,
+
+    "penaltis": "Não",
+    "placar_penaltis": "-",
+    "classificado": "REAL DANTAS",
+
+    "jogo": "Jogo A"
+  },
+
+  {
+    "titulo": "Copa Santa Cruz 2024",
+    "estadio": "Estádio Municipal",
+    "data": "20/07",
+    "hora": "16:30",
+
+    "escudo_mandante": "duzome.png",
+    "mandante": "DUZOME",
+    "gols_mandante": 1,
+
+    "escudo_visitante": "atleticoportela.png",
+    "visitante": "ATLÉTICO PORTELA",
+    "gols_visitante": 1,
+
+    "penaltis": "Sim",
+    "placar_penaltis": "4 x 2",
+    "classificado": "DUZOME",
+
+    "jogo": "Jogo B"
+  }
+]

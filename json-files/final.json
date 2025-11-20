@@ -1,0 +1,20 @@
+{
+  "titulo": "Copa Santa Cruz 2024",
+  "estadio": "Estádio Municipal",
+  "data": "11/08",
+  "hora": "16:00",
+
+  "escudo_mandante": "realdantas.png",
+  "mandante": "REAL DANTAS",
+  "gols_mandante": 1,
+
+  "escudo_visitante": "duzome.png",
+  "visitante": "DUZOME",
+  "gols_visitante": 1,
+
+  "penaltis": "Sim",
+  "placar_penaltis": "5 x 4",
+  "campeao": "REAL DANTAS",
+
+  "jogo": "Final"
+}

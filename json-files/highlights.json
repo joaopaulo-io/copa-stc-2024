@@ -1,0 +1,81 @@
+[
+  {
+    "competicao": "Copa Santa Cruz 2024",
+    "data": "11 de Agosto",
+    "hora": "16:00",
+    "local": "Estádio Municipal",
+
+    "mandante": "REAL DANTAS",
+    "escudo_mandante": "realdantas.png",
+    "gols_mandante": 1,
+
+    "visitante": "DUZOME",
+    "escudo_visitante": "duzome.png",
+    "gols_visitante": 1,
+
+    "penaltis": "5 x 4",
+    "descricao": "Campeão: REAL DANTAS",
+    "link_text": "Final",
+    "link": "#final"
+  },
+
+  {
+    "competicao": "Copa Santa Cruz 2024",
+    "data": "20 de Julho",
+    "hora": "16:30",
+    "local": "Estádio Municipal",
+
+    "mandante": "DUZOME",
+    "escudo_mandante": "duzome.png",
+    "gols_mandante": 1,
+
+    "visitante": "ATLÉTICO PORTELA",
+    "escudo_visitante": "atleticoportela.png",
+    "gols_visitante": 1,
+
+    "penaltis": "4 x 2",
+    "descricao": "Classificado: DUZOME",
+    "link_text": "Semifinal",
+    "link": "#semi-finals"
+  },
+
+  {
+    "competicao": "Copa Santa Cruz 2024",
+    "data": "14 de Julho",
+    "hora": "14:30",
+    "local": "Estádio Municipal",
+
+    "mandante": "ASTON VILLA",
+    "escudo_mandante": "astonvilla.png",
+    "gols_mandante": 0,
+
+    "visitante": "REAL DANTAS",
+    "escudo_visitante": "realdantas.png",
+    "gols_visitante": 2,
+
+    "penaltis": "—",
+    "descricao": "Classificado: REAL DANTAS",
+    "link_text": "Quartas de Final",
+    "link": "#quarter-finals"
+  },
+
+  {
+    "competicao": "Copa Santa Cruz 2024",
+    "data": "14 de Julho",
+    "hora": "16:30",
+    "local": "Estádio Municipal",
+
+    "mandante": "GAMA",
+    "escudo_mandante": "gama.png",
+    "gols_mandante": 1,
+
+    "visitante": "ATLÉTICO PORTELA",
+    "escudo_visitante": "atleticoportela.png",
+    "gols_visitante": 2,
+
+    "penaltis": "—",
+    "descricao": "Classificado: ATLÉTICO PORTELA",
+    "link_text": "Quartas de Final",
+    "link": "#quarter-finals"
+  }
+]

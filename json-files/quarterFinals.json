@@ -1,0 +1,74 @@
+[
+  {
+    "titulo": "Copa Santa Cruz 2024",
+    "estadio": "Estádio Municipal",
+    "data": "07/07",
+    "hora": "14:30",
+    "escudo_mandante": "liverpool.png",
+    "mandante": "LIVERPOOL",
+    "gols_mandante": 1,
+
+    "escudo_visitante": "riachodavarzea.png",
+    "visitante": "RIACHO DA VÁRZEA",
+    "gols_visitante": 1,
+
+    "penaltis": "Sim",
+    "placar_penaltis": "5 x 4",
+    "classificado": "LIVERPOOL",
+    "jogo": "Jogo 1"
+  },
+  {
+    "titulo": "Copa Santa Cruz 2024",
+    "estadio": "Estádio Municipal",
+    "data": "07/07",
+    "hora": "16:30",
+    "escudo_mandante": "duzome.png",
+    "mandante": "DUZOME",
+    "gols_mandante": 1,
+
+    "escudo_visitante": "monteiro.png",
+    "visitante": "M. MONTEIRO",
+    "gols_visitante": 1,
+
+    "penaltis": "Sim",
+    "placar_penaltis": "5 x 3",
+    "classificado": "DUZOME",
+    "jogo": "Jogo 2"
+  },
+  {
+    "titulo": "Copa Santa Cruz 2024",
+    "estadio": "Estádio Municipal",
+    "data": "14/07",
+    "hora": "14:30",
+    "escudo_mandante": "astonvilla.png",
+    "mandante": "ASTON VILLA",
+    "gols_mandante": 0,
+
+    "escudo_visitante": "realdantas.png",
+    "visitante": "REAL DANTAS",
+    "gols_visitante": 2,
+
+    "penaltis": "Não",
+    "placar_penaltis": "-",
+    "classificado": "REAL DANTAS",
+    "jogo": "Jogo 3"
+  },
+  {
+    "titulo": "Copa Santa Cruz 2024",
+    "estadio": "Estádio Municipal",
+    "data": "14/07",
+    "hora": "16:30",
+    "escudo_mandante": "gama.png",
+    "mandante": "GAMA",
+    "gols_mandante": 1,
+
+    "escudo_visitante": "atleticoportela.png",
+    "visitante": "ATLÉTICO PORTELA",
+    "gols_visitante": 2,
+
+    "penaltis": "Não",
+    "placar_penaltis": "-",
+    "classificado": "ATLÉTICO PORTELA",
+    "jogo": "Jogo 4"
+  }
+]

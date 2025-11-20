@@ -1,628 +1,358 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== REMIXICONS ===============-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <!-- Título da página -->
+    <title>Copa Santa Cruz 2024 – Resultados, Tabela e Notícias</title>
 
-     <!--=============== CSS SWIPER ===============-->
-     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <!-- Meta descrição (SEO) -->
+    <meta
+      name="description"
+      content="Acompanhe a Copa Santa Cruz 2024: tabela completa e resultados atualizados."
+    />
 
-     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Acessibilidade: cor do tema -->
+    <meta name="theme-color" content="#28283A" />
 
-     <title>Copa do interior 2024</title>
-</head>
-<body>
-    <!--=============== NAVBAR ===============-->
-    <nav>
-        <div class="container nav__container">
-            <a href="index.html">
-                <img src="images/logo.png" alt="Logo da Copa do Interior 2024">
+    <!-- Ícone do site -->
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+
+    <!-- Remixicons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Copa do Interior 2024 – Resultados e Notícias"
+    />
+    <meta
+      property="og:description"
+      content="Veja os resultados da Copa Santa Cruz 2024: jogos, classificação e resultados."
+    />
+    <meta property="og:image" content="img/logo.png" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="nav" aria-label="Menu principal">
+      <div class="container nav-container">
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo">
+          <img src="images/logo.png" alt="Logo da Copa do Interior 2024" />
+        </a>
+
+        <!-- Menu -->
+        <div class="nav-menu" id="nav-menu" role="menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#header" class="nav-link">
+                <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+                <span>Início</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#classification" class="nav-link">
+                <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+                <span>Classificação</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#phase1" class="nav-link">
+                <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+                <span>1ª Fase</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#quarter-finals" class="nav-link">
+                <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+                <span>Quartas</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#semi-finals" class="nav-link">
+                <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+                <span>Semi</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#final" class="nav-link">
+                <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+                <span>Final</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Links sociais -->
+          <div class="nav-social">
+            <a
+              href="https://www.instagram.com/secretariade_esportestc"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="nav-social-link"
+              aria-label="Instagram da Secretaria de Esportes"
+            >
+              <i class="ri-instagram-line" aria-hidden="true"></i>
             </a>
+          </div>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#header" class="nav__link">
-                            <i class="ri-arrow-right-up-line"></i>
-                            <span>Inicio</span>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#classificacao" class="nav__link">
-                            <i class="ri-arrow-right-up-line"></i>
-                            <span>Classificação</span>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#fase1" class="nav__link">
-                            <i class="ri-arrow-right-up-line"></i>
-                            <span>1ª Fase</span>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#quartas-de-final" class="nav__link">
-                            <i class="ri-arrow-right-up-line"></i>
-                            <span>Quartas</span>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#semi-final" class="nav__link">
-                            <i class="ri-arrow-right-up-line"></i>
-                            <span>Semi</span>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#final" class="nav__link">
-                            <i class="ri-arrow-right-up-line"></i>
-                            <span>Final</span>
-                        </a>
-                    </li>
-                </ul>
-
-                <!-- Close button -->
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-large-line"></i>
-                </div>
-
-                <div class="nav__social">
-                    <a href="https://www.instagram.com/secretariade_esportestc" target="_blank" class="nav__social-link">
-                        <i class="ri-instagram-line"></i>
-                    </a>
-
-                    <a href="https://facebook.com/" target="_blank" class="nav__social-link">
-                        <i class="ri-facebook-line"></i>
-                     </a>
-                </div>
-            </div>
-
-            <!-- Toggle button -->
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-menu-line"></i>
-            </div>
+          <!-- Botão de fechar -->
+          <button class="nav-close" id="nav-close" aria-label="Fechar menu">
+            <i class="ri-close-large-line" aria-hidden="true"></i>
+          </button>
         </div>
+
+        <!-- Alternar menu -->
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <i class="ri-menu-line" aria-hidden="true"></i>
+        </button>
+      </div>
     </nav>
+    <!-- Fim da seção nav -->
 
-    <!--=============== HEADER ===============-->
-    <header id="header">
-        <div class="container header__container mySwiper">
-            <div class="header__title">
-                <h1>Jogos em Destaque</h1>
-                <a href="#fase1">Ver mais</a>
-            </div>
-            <div class="card__content swiper-wrapper">
-                <article class="highlights swiper-slide">
-                    <div class="shild__teams">
-                        <div class="teams__info">
-                            <img src="images/realdantas.png" alt="Escudo equipe mandante">
-                            <h5>Real Dantas</h5>
-                        </div>
-                        <div class="container-info__partida">
-                            <div class="scoreboard">
-                                <h6>1</h6>
-                                <span>x</span>
-                                <h6>1</h6> 
-                            </div>
-                            <div class="info__partida">
-                                <h6>Penaltis: 5 x 4</h6>
-                                <h6>Campeão: Real Dantas </h6>
-                            </div> 
-                        </div>
-                        <div class="teams__info">
-                            <img src="images/duzome.png" alt="Escudo equipe visitante">
-                            <h5>Duzome</h5>
-                        </div>
-                    </div>
-                    <div class="highlights__info">
-                        <h4>Copa do Interior 2024</h4>
-                        <p>11 AGO | 16:00H | SEDE</p>
-                        <a href="#final" class="btn btn-primary">Final</a>
-                    </div>
-                </article>
+    <!-- header -->
+    <header class="hero-header" id="header">
+      <div class="container">
+        <h1>Copa Santa Cruz 2024</h1>
+        <p>
+          Bem-vindo a página da Copa Santa Cruz 2024! Aqui você acompanha
+          classificação, jogos, estatísticas e todas as informações sobre as
+          equipes participantes.
+        </p>
 
-                <article class="highlights swiper-slide">
-                    <div class="shild__teams">
-                        <div class="teams__info">
-                            <img src="images/duzome.png" alt="Escudo equipe mandante">
-                            <h5>Duzome</h5>
-                        </div>
-                        <div class="container-info__partida">
-                            <div class="scoreboard">
-                                <h6>1</h6>
-                                <span>x</span>
-                                <h6>1</h6> 
-                            </div>
-                            <div class="info__partida">
-                                <h6>Penaltis: 4 x 2</h6>
-                                <h6>Classificado: Duzome </h6>
-                            </div> 
-                        </div>
-                        <div class="teams__info">
-                            <img src="images/atleticoportela.png" alt="Escudo equipe visitante">
-                            <h5>Atlético Portela</h5>
-                        </div>
-                    </div>
-                    <div class="highlights__info">
-                        <h4>Copa do Interior 2024</h4>
-                        <p>20 JUL | 16:30H | SEDE</p>
-                        <a href="#semi-final" class="btn btn-primary">Semi-final</a>
-                    </div>
-                </article>
-
-                <article class="highlights swiper-slide">
-                    <div class="shild__teams">
-                        <div class="teams__info">
-                            <img src="images/astonvilla.png" alt="Escudo equipe mandante">
-                            <h5>Aston Villa</h5>
-                        </div>
-                        <div class="scoreboard">
-                            <h6>0</h6> 
-                            <span>x</span>
-                            <h6>2</h6>
-                        </div>
-                        <div class="teams__info">
-                            <img src="images/realdantas.png" alt="Escudo equipe visitante">
-                            <h5>Real Dantas</h5>
-                        </div>
-                    </div>
-                    <div class="highlights__info">
-                        <h4>Copa do Interior 2024</h4>
-                        <p>14 JUL | 14:30H | SEDE</p>
-                        <a href="#quartas-de-final" class="btn btn-primary">Quartas de Final</a>
-                    </div>
-                </article>
-
-                <article class="highlights swiper-slide">
-                    <div class="shild__teams">
-                        <div class="teams__info">
-                            <img src="images/gama.png" alt="Escudo equipe mandante">
-                            <h5>Gama</h5>
-                        </div>
-                        <div class="scoreboard">
-                            <h6>1</h6>
-                            <span>x</span>
-                            <h6>2</h6> 
-                        </div>
-                        <div class="teams__info">
-                            <img src="images/atleticoportela.png" alt="Escudo equipe visitante">
-                            <h5>Atlético Portela</h5>
-                        </div>
-                    </div>
-                    <div class="highlights__info">
-                        <h4>Copa do Interior 2024</h4>
-                        <p>14 JUL | 16:30H | SEDE</p>
-                        <a href="#quartas-de-final" class="btn btn-primary">Quartas de Final</a>
-                    </div>
-                </article>
-            </div>
-            <div class="swiper-pagination"></div>
+        <!-- Hero Stats -->
+        <div class="hero-stats">
+          <span>🏆 Campeão: Real Dantas</span>
+          <span>⚽ Partidas: 31</span>
+          <span>👥 Times: 16</span>
+          <span>🥅 Gols: 91</span>
         </div>
+
+        <div class="hero-buttons">
+          <a href="#highlights" class="btn btn-primary">Destaques</a>
+          <a href="downloads/tabela.pdf" class="btn btn-secondary" download
+            >Baixar Tabela</a
+          >
+        </div>
+      </div>
     </header>
+    <!-- Fim da seção header -->
 
-    <!--=============== CLASSIFICAÇÃO ===============-->
-    <section class="classificacao" id="classificacao">
-        <div class="container">
-            <div class="classificacao__title">
-                <h1>Classificação</h1>
-                <a href="#fase1">Ver mais</a>
-            </div>
-            <div class="formulario">
-                <form action="">
-                    <label for="letrasDosGrupos">Selecione a letra do grupo: </label>
-                    <select name="letrasDosGrupos" id="letrasDosGrupos" class="letrasDosGrupos">
-                        <option value="A">A</option>
-                        <option value="B">B</option>
-                        <option value="C">C</option>
-                        <option value="D">D</option>
-                    </select>
-                </form>
-            </div>
-            <h3 class="title__group">Grupo <span class="letra"></span></h3>
-
-            <table class="tabelaClassificacao">
-                <tr>
-                    <th>#</th>
-                    <th>EQUIPE</th>
-                    <th>PG</th>
-                    <th>J</th>
-                    <th>V</th>
-                    <th>E</th>
-                    <th>D</th>
-                    <th>GP</th>
-                    <th>GC</th>
-                    <th>SG</th>
-                </tr>
-                <tbody class="corpoClassificacao">
-                    <tr></tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr></tr>
-                </tbody>
-            </table>
+    <!-- Seção do Swiper -->
+    <section class="highlights-section section" id="highlights" >
+      <div class="container highlights-container mySwiper">
+        <div class="highlights-title">
+          <h1>Jogos em Destaque</h1>
+          <a href="#phase1" aria-label="Ver mais jogos da fase 1">Ver mais</a>
         </div>
+
+        <div
+          class="card-content swiper-wrapper"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Jogos em destaque"
+        >
+          <!-- Os slides serão inseridos dinamicamente pelo JavaScript -->
+        </div>
+
+        <div class="swiper-pagination" aria-label="Paginação dos jogos"></div>
+      </div>
     </section>
 
-    <!--=============== JOGO FASE 1 ===============-->
-    <section class="fase1" id="fase1">
-        <div class="container">
-           <div class="fase1__title">
-             <h1>Jogos 1ª fase</h1>
-             <a href="quartas-de-final">Ver mais</a>
-           </div>
-           <div class="tabelaJogos"></div>
+    <!-- classification -->
+    <section class="classification section" id="classification">
+      <div class="container">
+        <div class="classification-title">
+          <h1>Classificação</h1>
+          <a href="#phase1" aria-label="Ver mais detalhes da classificação"
+            >Ver mais</a
+          >
         </div>
+
+        <form
+          class="form"
+          action=""
+          aria-label="Filtrar classificação por grupo"
+        >
+          <label for="groupLetters">Selecione a letra do grupo:</label>
+          <select name="groupLetters" id="groupLetters" class="groupLetters">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+          </select>
+        </form>
+
+        <h2 class="title-group">Grupo <span class="letter"></span></h2>
+
+        <table
+          class="classification-table"
+          summary="Tabela de classificação dos times por grupo"
+        >
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">EQUIPE</th>
+              <th scope="col">PG</th>
+              <th scope="col">J</th>
+              <th scope="col">V</th>
+              <th scope="col">E</th>
+              <th scope="col">D</th>
+              <th scope="col">GP</th>
+              <th scope="col">GC</th>
+              <th scope="col">SG</th>
+            </tr>
+          </thead>
+          <tbody class="classification-body">
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
     </section>
+    <!-- Fim da seção classification -->
 
-    <!--=============== QUARTAS DE FINAL ===============-->
-    <section id="quartas-de-final">
-        <div class="container">
-            <div class="title__finais">
-                <h1>Quartas de Final</h1>
-                <a>Ver mais</a>
-            </div>
-
-            <div class="grid__container">
-                <div class="container__finais">
-                    <div class='titulo-cards-finais'>
-                        <h2>Copa do Interior 2024</h2>
-                        <p>SEDE</p>
-                        <h3>07/07 - 14:30<h3>
-                    </div>
-
-                    <div class="container-partida">
-                        <div class="container-equipe-finais">
-                            <div class="alinhamento-em-linha-finais">
-                                <span class='equipe-nome-finais'>LIVERPOOL</span>
-                                <img src="images/liverpool.png">
-                            </div>
-                        </div>
-                        <div class='placar-finais'>
-                            <span class='placar'>1</span> 
-                            <span>X</span>
-                            <span class='placar'>1</span> 
-                        </div>
-                        <div class="container-equipe-finais">
-                            <div class="alinhamento-em-linha-finais">
-                                <img src="images/riachodavarzea.png">
-                                <span class='equipe-nome-finais'>RIACHO DA VÁRZEA</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="info__partida">
-                        <h6>Penaltis: Sim</h6>
-                        <h6>Placar Penaltis: 5 x 4</h6>
-                        <h6>Classificado: LIVERPOOL </h6>
-                    </div>
-
-                    <div class='button-tabela-jogos'>
-                        <button class='btn btn-primary'>Jogo 1</button>
-                    </div>
-                </div>
-
-                <div class="container__finais">
-                    <div class='titulo-cards-finais'>
-                        <h2>Copa do Interior 2024</h2>
-                        <p>SEDE</p>
-                        <h3>07/07 - 16:30<h3>
-                    </div>
-
-                    <div class="container-partida">
-                        <div class="container-equipe-finais">
-                            <div class="alinhamento-em-linha-finais">
-                                <span class='equipe-nome-finais'>DUZOME</span>
-                                <img src="images/duzome.png">
-                            </div>
-                        </div>
-                        <div class='placar-finais'>
-                            <span class='placar'>1</span>
-                            <span>X</span>
-                            <span class='placar'>1</span> 
-                        </div>
-                        <div class="container-equipe-finais">
-                            <div class="alinhamento-em-linha-finais">
-                                <img src="images/monteiro.png">
-                                <span class='equipe-nome-finais'>MERCADINHO MONTEIRO</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="info__partida">
-                        <h6>Penaltis: Sim</h6>
-                        <h6>Placar Penaltis: 5 x 3</h6>
-                        <h6>Classificado: DUZOME </h6>
-                    </div>
-
-                    <div class='button-tabela-jogos'>
-                        <button class='btn btn-primary'>Jogo 2</button>
-                    </div>
-                </div>
-
-                <div class="container__finais">
-                    <div class='titulo-cards-finais'>
-                        <h2>Copa do Interior 2024</h2>
-                        <p>SEDE</p>
-                        <h3>14/07 - 14:30<h3>
-                    </div>
-
-                    <div class="container-partida">
-                        <div class="container-equipe-finais">
-                            <div class="alinhamento-em-linha-finais">
-                                <span class='equipe-nome-finais'>ASTON VILLA</span>
-                                <img src="images/astonvilla.png">
-                            </div>
-                        </div>
-                        <div class='placar-finais'>
-                            <span class='placar'>0</span> 
-                            <span>X</span>
-                            <span class='placar'>2</span> 
-                        </div>
-                        <div class="container-equipe-finais">
-                            <div class="alinhamento-em-linha-finais">
-                                <img src="images/realdantas.png">
-                                <span class='equipe-nome-finais'>REAL DANTAS</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="info__partida">
-                        <h6>Penaltis: Não</h6>
-                        <h6>Placar Penaltis: </h6>
-                        <h6>Classificado: REAL DANTAS</h6>
-                    </div>
-
-                    <div class='button-tabela-jogos'>
-                        <button class='btn btn-primary'>Jogo 3</button>
-                    </div>
-                </div>
-
-                <div class="container__finais">
-                    <div class='titulo-cards-finais'>
-                        <h2>Copa do Interior 2024</h2>
-                        <p>SEDE</p>
-                        <h3>14/07 - 16:30<h3>
-                    </div>
-
-                    <div class="container-partida">
-                        <div class="container-equipe-finais">
-                            <div class="alinhamento-em-linha-finais">
-                                <span class='equipe-nome-finais'>GAMA</span>
-                                <img src="images/gama.png">
-                            </div>
-                        </div>
-                        <div class='placar-finais'>
-                            <span class='placar'>1</span> 
-                            <span>X</span>
-                            <span class='placar'>2</span> 
-                        </div>
-                        <div class="container-equipe-finais">
-                            <div class="alinhamento-em-linha-finais">
-                                <img src="images/atleticoportela.png">
-                                <span class='equipe-nome-finais'>ATLÉTICO PORTELA</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="info__partida">
-                        <h6>Penaltis: Não</h6>
-                        <h6>Placar Penaltis: </h6>
-                        <h6>Classificado: ATLÉTICO PORTELA</h6>
-                    </div>
-
-                    <div class='button-tabela-jogos'>
-                        <button class='btn btn-primary'>Jogo 4</button>
-                    </div>
-                </div>
-            </div>
+    <!-- phase 1 -->
+    <section class="phase1" id="phase1">
+      <div class="container finals">
+        <div class="finals-title">
+          <h1>Jogos 1ª fase</h1>
+          <a href="#quarter-finals" aria-label="Ir para as Quartas de Final"
+            >Ver mais</a
+          >
         </div>
+        <div class="matches-table"></div>
+      </div>
     </section>
+    <!-- Fim da seção phase1 -->
 
-    <!--=============== SEMI-FINAL ===============-->
-    <section id="semi-final">
-        <div class="container">
-            <div class="title__finais">
-                <h1>Semi-final</h1>
-                <a href="#final">Ver mais</a>
-            </div>
-            <div class="grid__container">
-                <div class="container__finais">
-                    <div class='titulo-cards-finais'>
-                        <h2>Copa do Interior 2024</h2>
-                        <p>SEDE</p>
-                        <h3>20/07 - 14:30<h3>
-                    </div>
+    <!-- Quarter finals -->
+    <section class="section" id="quarter-finals">
+      <div class="container finals">
+        <header class="finals-title">
+          <h1>Quartas de Final</h1>
+          <a href="#semi-finals">Ver mais</a>
+        </header>
 
-                    <div class="container-partida">
-                        <div class="container-equipe-finais">
-                            <div class="alinhamento-em-linha-finais">
-                                <span class='equipe-nome-finais'>LIVERPOOL</span>
-                                <img src="images/liverpool.png">
-                            </div>
-                        </div>
-                        <div class='placar-finais'>
-                            <span class='placar'>1</span> 
-                            <span>X</span>
-                            <span class='placar'>3</span> 
-                        </div>
-                        <div class="container-equipe-finais">
-                            <div class="alinhamento-em-linha-finais">
-                                <img src="images/realdantas.png">
-                                <span class='equipe-nome-finais'>REAL DANTAS</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="info__partida">
-                        <h6>Penaltis: Não</h6>
-                        <h6>Placar Penaltis: </h6>
-                        <h6>Classificado: REAL DANTAS</h6>
-                    </div>
-
-                    <div class='button-tabela-jogos'>
-                        <button class='btn btn-primary'>Jogo A</button>
-                    </div>
-                </div>
-
-                <div class="container__finais">
-                    <div class='titulo-cards-finais'>
-                        <h2>Copa do Interior 2024</h2>
-                        <p>SEDE</p>
-                        <h3>20/07 - 16:30<h3>
-                    </div>
-
-                    <div class="container-partida">
-                        <div class="container-equipe-finais">
-                            <div class="alinhamento-em-linha-finais">
-                                <span class='equipe-nome-finais'>DUZOME</span>
-                                <img src="images/duzome.png">
-                            </div>
-                        </div>
-                        <div class='placar-finais'>
-                            <span class='placar'>1</span> 
-                            <span>X</span>
-                            <span class='placar'>1</span> 
-                        </div>
-                        <div class="container-equipe-finais">
-                            <div class="alinhamento-em-linha-finais">
-                                <img src="images/atleticoportela.png">
-                                <span class='equipe-nome-finais'>ATLÉTICO PORTELA</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="info__partida">
-                        <h6>Penaltis: Sim</h6>
-                        <h6>Placar Penaltis: 4 x 2</h6>
-                        <h6>Classificado: DUZOME</h6>
-                    </div>
-
-                    <div class='button-tabela-jogos'>
-                        <button class='btn btn-primary'>Jogo B</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Os jogos serão inseridos automaticamente aqui -->
+        <div class="matches-grid" id="quarterFinalsContainer"></div>
+      </div>
     </section>
+    <!-- Fim da seção Quarter finals -->
 
-    <!--=============== FINAL ===============-->
-    <section id="final">
-        <div class="container">
-            <div class="title__finais">
-                <h1>Final</h1>
-                <a>Ver mais</a>
-            </div>
+    <!-- Semi-finals -->
+    <section class="section" id="semi-finals">
+      <div class="container finals">
+        <header class="finals-title">
+          <h1>Semi-final</h1>
+          <a href="#final-match">Ver mais</a>
+        </header>
 
-            <div class="container__final">
-                <div class="container__finais">
-                    <div class='titulo-cards-finais'>
-                        <h2>Copa do Interior 2024</h2>
-                        <p>SEDE</p>
-                        <h3>11/08 - 16:00<h3>
-                    </div>
-
-                    <div class="container-partida">
-                        <div class="container-equipe-finais">
-                            <div class="alinhamento-em-linha-finais">
-                                <span class='equipe-nome-finais'>REAL DANTAS</span>
-                                <img src="images/realdantas.png">
-                            </div>
-                        </div>
-                        <div class='placar-finais'>
-                            <span class='placar'>1</span> 
-                            <span>X</span>
-                            <span class='placar'>1</span> 
-                        </div>
-                        <div class="container-equipe-finais">
-                            <div class="alinhamento-em-linha-finais">
-                                <img src="images/duzome.png">
-                                <span class='equipe-nome-finais'>DUZOME</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="info__partida">
-                        <h6>Penaltis: Sim</h6>
-                        <h6>Placar Penaltis: 5 x 4</h6>
-                        <h6>Campeão: REAL DANTAS</h6>
-                    </div>
-
-                    <div class='button-tabela-jogos'>
-                        <button class='btn btn-primary'>Final</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Jogos serão gerados automaticamente -->
+        <div class="matches-grid" id="semiFinalsContainer"></div>
+      </div>
     </section>
+    <!-- Fim da seção Semi-finals -->
 
-    <!--=============== FOOTER ===============-->
-    <footer>
-        <!--<div class="logo__sec container">
-            <img src="images/logo-sec.png" alt="Logo da secretaria de esportes">
-        </div> -->
-        <div class="container footer__container">
-            <div class="footer__1">
-                <a href="" class="footer__logo"><h4>Copa do Interior 2024</h4></a>
-                <p>Acompanhe todos os resultados da Copa do Interior de Santa Cruz 2024.</p>
-            </div>
-            <div class="footer__2">
-                <h4>Permalinks</h4>
-                <ul class="permalinks">
-                    <li><a href="#header">Inicio</a></li>
-                    <li><a href="#classificacao">Classificação</a></li>
-                    <li><a href="#fase1">1º Fase</a></li>
-                    <li><a href="#quartas-de-final">Quartas</a></li>
-                    <li><a href="#semi-final">Semi</a></li>
-                    <li><a href="#final">Final</a></li>
-                </ul>
-            </div>
-            <div class="footer__3">
-                <h4>Privacy</h4>
-                <ul class="privacy">
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Terms and Conditions</a></li>
-                    <li><a href="">Refund Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer__4">
-                <h4>Contact Us</h4>
-                <ul class="footer__socials">
-                    <li><a href="https://www.instagram.com/secretariade_esportestc"><i class="ri-instagram-line"></i></a></li>
-                </ul>
-            </div>
+    <!-- Final -->
+    <section class="section" id="final">
+      <div class="container finals">
+        <header class="finals-title">
+          <h1>Final</h1>
+          <a href="#final">Ver mais</a>
+        </header>
+
+        <!-- Jogo inserido dinamicamente pelo JS -->
+        <div id="finalContainer"></div>
+      </div>
+    </section>
+    <!-- Fim da seção Final -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Container principal do footer -->
+      <div class="container footer-container">
+        <!-- Branding e descrição -->
+        <div class="footer-section footer-branding">
+          <a href="#" class="footer-logo"><h4>Copa do Interior 2024</h4></a>
+          <p>
+            Acompanhe a classificação e todos os resultados da Copa Santa Cruz
+            2024.
+          </p>
         </div>
-        <div class="footer_copyright">
-            <small>Copyright &copy; Secretaria de Esportes</small>
+
+        <nav
+          class="footer-section footer-permalinks"
+          aria-label="Footer navigation"
+        >
+          <h4>Permalinks</h4>
+          <ul class="permalinks-list">
+            <li><a href="#header">Início</a></li>
+            <li><a href="#classificacao">Classificação</a></li>
+            <li><a href="#fase1">1º Fase</a></li>
+            <li><a href="#quarter-finals">Quartas</a></li>
+            <li><a href="#semi-final">Semi</a></li>
+            <li><a href="#final-match">Final</a></li>
+          </ul>
+        </nav>
+
+        <!-- Privacidade e políticas -->
+        <div class="footer-section footer-privacy">
+          <h4>Download</h4>
+          <ul class="privacy-list">
+            <li><a href="downloads/tabela.pdf" download>Baixar Tabela</a></li>
+          </ul>
         </div>
+
+        <!-- Social media links -->
+        <div class="footer-section footer-socials">
+          <h4>Contato</h4>
+          <ul class="social-list">
+            <li>
+              <a
+                href="https://www.instagram.com/secretariade_esportestc"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram Secretaria de Esportes"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-copyright">
+        <small>Copyright &copy; Secretaria de Esportes</small>
+      </div>
     </footer>
-    
-    <!--=============== SWIPER JS ===============-->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            // when window width is >= 600px
-            breakpoints: {
-                600: {
-                    slidesPerView: 2,
-                }
-            }
-        });
-    </script>
+    <!-- Fim da seção footer -->
 
-   <!--=============== MAIN JS ===============-->
-   <script src="js/index.js"></script>
-</body>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
 </html>
