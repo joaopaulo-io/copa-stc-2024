@@ -803,6 +803,14 @@ form {
     padding: 0.7rem 1.5rem;
   }
 
+  .teams__info figcaption h5 {
+    font-size: 0.7rem;
+  }
+
+  .highlights__footer a {
+    width: 60%;
+  }
+
   .classification table th {
     font-size: 0.9rem;
   }
@@ -871,6 +879,14 @@ form {
   .hero-buttons {
     flex-direction: column;
     gap: 0.8rem;
+  }
+
+  .teams__info figcaption h5 {
+    font-size: 0.7rem;
+  }
+
+  .highlights__footer a {
+    width: 70%;
   }
 
   .classification table th {
